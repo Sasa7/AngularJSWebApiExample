@@ -1,0 +1,12 @@
+﻿
+
+<table data-ng-table="tableParams" data-ng-repeat="e in Employees" class="table table-striped" id="myTable">
+    <tr><th>Id</th><th>FirstName</th><th>LastName</th><th>Delete</th><th>Edit</th></tr>
+    <tr>
+    <td data-ng-bind="e.EmployeeID"></td>
+    <td data-ng-bind="e.FirstName"></td>
+    <td data-ng-bind="e.LastName"></td>
+    <td><button data-ng-click="RemoveEmployee(e)" class="btn">Delete</button></td>
+    <td><a href="#/EditEmployee/{{e.EmployeeID}}">Edit</a></td>
+    </tr>
+</table>

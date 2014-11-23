@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="MyApp">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</head>
+<body class="container">
+    <div class="navbar-btn">
+        <a href="#/AddEmployee">Add new Employee</a> |
+        <a href="#/">Employees List</a>
+    </div>
+    <div data-ng-view class="col-md-8"></div>
+    
+    
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="app/controllers/ListEmployeeController.js"></script>
+    <script src="app/controllers/NewEmployeeController.js"></script>
+    <script src="app/controllers/UpdateEmployeeController.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>
